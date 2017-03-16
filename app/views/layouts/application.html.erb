@@ -30,6 +30,23 @@
     </header>
     <hr />
     <br class="clear" />
-    <%= yield %>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="col-xs-6">
+          <%= link_to "This isn't enuff, I need moar.", "#", class: 'next-quote' %>
+        </div>
+        <div class="col-xs-6 footer-blurb">
+          Proudly hacked in Singapore by <a href="http://thefirehoseproject.com">Harrison Lim</a><br />
+          Want to build your own Splurty Web App? <a href="http://thefirehoseproject.com">Learn how to code here.</a>
+        </div>
+        <p class="text-muted">Place stikky footer content hurr.</p>
+      </div>
+    </div>
+
   </body>
 </html>
